@@ -7,6 +7,7 @@ import Drizzle_icon from '/src/assets/drizzle.png'
 import Rain_icon from '/src/assets/heavy-rain.png'
 import Snow_icon from '/src/assets/snow.png'
 import Wind_icon from '/src/assets/windy.png'
+import Search_icon from'/src/assets/Search.png';
 
 
 const Weather = () => {
@@ -67,7 +68,7 @@ const Weather = () => {
             <div className='bg-gradient-to-tr from-blue-600 to-blue-300 w-80 mx-auto  items-center p-5 rounded-md '>
                 <div className='p-2 search-bar  bg-white rounded-md   flex items-center gap-10 '>
                     <input ref={inputRef} type='text' placeholder='Search' className='rounded-lg' />
-                    <img src="/src/assets/Search.png" alt="" onClick={()=>search(inputRef.current.value)} className='w-5 h-5 flex ' /></div>
+                    <img src={Search_icon} alt="" onClick={()=>search(inputRef.current.value)} className='w-5 h-5 flex ' /></div>
 
 
                 <img src={weatherData.icon} alt="" className='weather-icon' />
